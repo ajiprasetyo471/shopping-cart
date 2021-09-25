@@ -40,8 +40,13 @@
         <div class="banner-1">
           <p>Lorem ipsum dolor sit amet</p>
           <h1 class="banner-title">
-            Simple way to choose your <br />
-            <img src="./src/images/Group 34.svg" alt="" /> furniture
+            Simple way to choose your
+            <img
+              src="./src/images/Group 34.svg"
+              alt=""
+              class="banner-title-img"
+            />
+            furniture
           </h1>
           <button class="banner-btn">
             Enter your email to get
@@ -64,7 +69,7 @@
         <div class="banner-2">
           <div class="hero-product-container">
             <div class="hero-product-1">
-              <svg viewBox="0 0 500 500">
+              <svg viewBox="0 0 500 500" class="product-1-title">
                 <path
                   id="curve"
                   d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
@@ -78,7 +83,7 @@
                 class="product-1-acc"
                 alt=""
               />
-              <img src="./src/images/bed.png" alt="" />
+              <img src="./src/images/bed.png" alt="" class="product-1-img" />
               <img
                 src="./src/images/Group 35.svg"
                 alt=""
@@ -101,6 +106,14 @@
       </div>
     </header>
 
+    <!-- <div class="cart-overlay">
+      <div class="car">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+      </div>
+    </div> -->
+
     <div class="container">
       <section id="categories">
         <span class="categories-jumbo">Categories</span>
@@ -117,7 +130,7 @@
                 <path d="m 5 0 h 40 " />
                 %0A
               </svg>
-              <br />Categories
+              Categories
             </h3>
           </div>
           <div class="category-title-2">
@@ -319,7 +332,11 @@
         <div class="products-container">
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/chair1.png" alt="" />
+              <img class="img-product" src="./src/images/chair1.png" alt="" />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                Add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -327,7 +344,15 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/cupboard1.png" alt="" />
+              <img
+                class="img-product"
+                src="./src/images/cupboard2.png"
+                alt=""
+              />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -335,7 +360,11 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/table1.png" alt="" />
+              <img class="img-product" src="./src/images/table1.png" alt="" />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -343,7 +372,11 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/dresser2.png" alt="" />
+              <img class="img-product" src="./src/images/dresser2.png" alt="" />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -351,7 +384,11 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/dresser1.png" alt="" />
+              <img class="img-product" src="./src/images/dresser1.png" alt="" />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -359,7 +396,11 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/chair2.png" alt="" />
+              <img class="img-product" src="./src/images/chair2.png" alt="" />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -367,7 +408,15 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/cupboard2.png" alt="" />
+              <img
+                class="img-product"
+                src="./src/images/cupboard1.png"
+                alt=""
+              />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -375,7 +424,11 @@
           </div>
           <div class="product-item">
             <div class="product-img">
-              <img src="./src/images/table2.png" alt="" />
+              <img class="img-product" src="./src/images/table2.png" alt="" />
+              <button class="bag-btn" data-id="1">
+                <i class="fas fa-cart-plus"></i>
+                add to bag
+              </button>
             </div>
             <span>Lorem</span>
             <h4>Lorem Ipsum Dolor</h4>
@@ -462,7 +515,7 @@
       </section>
     </div>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; 2021 Copyright kayu.co</p>
     </footer>
 
