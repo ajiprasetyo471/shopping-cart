@@ -1,3 +1,8 @@
+const client = contentful.createClient({
+  space: 'xck9g4xbpdr4',
+  accessToken: 'rmogsL9AUMdeoxs7wJnIriMwOb7nw3luGVrT9CuGUJU',
+});
+
 const menuToggle = document.querySelector('.menu-toggle input');
 const navLink = document.querySelector('.nav-link');
 const cartBtn = document.querySelector('.cart-btn');
@@ -19,9 +24,14 @@ let btnsDOM = [];
 class Products {
   async getProducts() {
     try {
-      let result = await fetch('./src/products.json');
-      let data = await result.json();
-      let products = data.items;
+      const response = await client.getEntries({
+        content_type: 'kayuProducts',
+      });
+
+      // let result = await fetch('./src/products.json');
+      // let data = await result.json();
+
+      let products = response.items;
       products = products.map((item) => {
         const { title, price } = item.fields;
         const { id } = item.sys;
