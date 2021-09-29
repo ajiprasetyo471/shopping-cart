@@ -153,6 +153,7 @@ body {
   width: 10%;
   cursor: pointer;
   font-size: var(--body-text-font-size);
+  margin-right: 20px;
 }
 
 .nav-icon a {
@@ -163,7 +164,7 @@ body {
 .cart-items {
   position: absolute;
   top: -12px;
-  right: -5px;
+  right: -15px;
   background-color: var(--red);
   color: var(--text-head-1);
   padding: 0 8px;
@@ -490,6 +491,9 @@ body {
 .cart-footer .products-btn {
   font-size: var(--body-text-font-size);
   padding: 10px 15px;
+  background: var(--red);
+  color: var(--text-head-1);
+  margin-bottom: 70px;
 }
 
 /* End Cart */
@@ -1070,7 +1074,7 @@ body {
   /* Navbar */
 
   .cart-items {
-    right: -13px;
+    right: -23px;
   }
 
   /* End Navbar */
@@ -1251,7 +1255,7 @@ body {
   }
 
   .cart-items {
-    right: -18px;
+    right: -28px;
   }
 
   /* End Navbar */
@@ -1537,7 +1541,7 @@ body {
   }
 
   .cart-items {
-    right: -30px;
+    right: -40px;
   }
 
   .nav-icon {
