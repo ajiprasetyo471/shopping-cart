@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+
+    <header class="hero">
+      <div class="hero-center">
+        <div class="banner-1">
+          <p>Lorem ipsum dolor sit amet</p>
+          <h1 class="banner-title">
+            Simple way to choose your
+            <img src="./images/Group 34.svg" alt="" class="banner-title-img" />
+            furniture
+          </h1>
+          <button class="banner-btn">
+            Enter your email to get
+            <span class="banner-btn-detail">discount 20%</span>
+            <span class="banner-btn-icon"
+              ><i class="fas fa-arrow-right"></i
+            ></span>
+          </button>
+          <div class="banner-detail">
+            <div class="banner-detail-1">
+              <span class="banner-detail-first">100+</span>
+              <span class="banner-detail-second">unique<br />style</span>
+            </div>
+            <div class="banner-detail-2">
+              <span class="banner-detail-first">98+</span>
+              <span class="banner-detail-second">superbs<br />models</span>
+            </div>
+          </div>
+        </div>
+        <div class="banner-2">
+          <div class="hero-product-container">
+            <div class="hero-product-1">
+              <svg viewBox="0 0 500 500" class="product-1-title">
+                <path
+                  id="curve"
+                  d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
+                />
+                <text width="500">
+                  <textPath xlink:href="#curve">ALIQUAM</textPath>
+                </text>
+              </svg>
+              <img
+                src="./images/Rectangle 7.svg"
+                class="product-1-acc"
+                alt=""
+              />
+              <img src="./images/bed.png" alt="" class="product-1-img" />
+              <img src="./images/Group 35.svg" alt="" class="product-1-spec" />
+            </div>
+            <div class="hero-product-2">
+              <div class="hero-product-2-a">
+                <img src="./images/cupboard2.png" alt="" />
+              </div>
+              <div class="hero-product-2-b">
+                <img src="./images/rockchair.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="acc-container">
+            <img src="./images/Group 14.svg" alt="" class="product-acc" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your Cart</h2>
+        <div class="cart-content"></div>
+        <div class="cart-footer">
+          <h3>Your Total : $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart products-btn">CLEAR CART</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <categories-sec></categories-sec>
+      <section id="features">
+        <div class="features-container">
+          <span class="features-jumbo">Features</span>
+          <div class="feature-desc">
+            <h3 class="feature-title">
+              New Features
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                class="category-title-line"
+              >
+                %0A%09
+                <path d="m 5 0 h 40 " />
+                %0A
+              </svg>
+            </h3>
+            <div class="feature-item-container">
+              <div class="feature-items">
+                <span class="feature-num">01</span>
+                <div class="feature-item">
+                  <h4>The Best Price</h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate, eaque!
+                  </p>
+                </div>
+              </div>
+              <div class="feature-items items-shadow">
+                <span class="feature-num">02</span>
+                <div class="feature-item">
+                  <h4>Unique Style</h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate, eaque!
+                  </p>
+                </div>
+              </div>
+              <div class="feature-items">
+                <span class="feature-num">03</span>
+                <div class="feature-item">
+                  <h4>Premium Quality</h4>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate, eaque!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-prod">
+            <div class="feature-prod-item">
+              <img
+                src="./images/rockchair.png"
+                alt=""
+                class="feature-prod-img"
+              />
+              <img
+                src="./images/Group 35.svg"
+                alt=""
+                class="feature-prod-svg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products">
+        <div class="products-title">
+          <h3>Our Products</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam,
+            aspernatur.
+          </p>
+        </div>
+        <ul class="products-nav">
+          <a class="products-link" href=""><li>Lorem</li></a>
+          <a class="products-link products-active" href=""><li>Ipsum</li></a>
+          <a class="products-link" href=""><li>Dolor</li></a>
+          <a class="products-link" href=""><li>Sit</li></a>
+          <a class="products-link" href=""><li>Amet</li></a>
+        </ul>
+        <div class="products-container"></div>
+        <button class="products-btn">VIEW ALL</button>
+      </section>
+      <discover-sec></discover-sec>
+      <section id="contact">
+        <img src="./images/Line 38.svg" alt="" class="contact-line-1" />
+        <img src="./images/Line 39.svg" alt="" class="contact-line-2" />
+        <div class="contact-container">
+          <div class="contact-title">
+            <h3>
+              Need Help <img src="./images/Group 27.svg" alt="" /><br />with
+              anything?
+            </h3>
+            <p>Let’s hear about it! <a href=""> Contact Us</a></p>
+          </div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <h4>Menu</h4>
+              <a href=""><p>About Us</p></a>
+              <a href=""><p>History</p></a>
+            </div>
+            <div class="contact-item">
+              <h4>Product</h4>
+              <a href=""><p>Categories</p></a>
+              <a href=""><p>Pricing</p></a>
+              <a href=""><p>Testimonials</p></a>
+            </div>
+            <div class="contact-item">
+              <h4>Discover</h4>
+              <a href=""><p>Customer</p></a>
+              <a href=""><p>Privacy</p></a>
+              <a href=""><p>FAQ's</p></a>
+            </div>
+            <div class="contact-item">
+              <h4>Follow Us</h4>
+              <div class="contact-item-icons">
+                <span class="contact-icon">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </span>
+                <span class="contact-icon">
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </span>
+                <span class="contact-icon">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer-bar></footer-bar>
+
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

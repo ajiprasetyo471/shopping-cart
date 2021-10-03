@@ -1,10 +1,5 @@
-const client = contentful.createClient({
-  space: 'xck9g4xbpdr4',
-  accessToken: 'rmogsL9AUMdeoxs7wJnIriMwOb7nw3luGVrT9CuGUJU',
-});
+import Storage from '../data/storage.js';
 
-const menuToggle = document.querySelector('.menu-toggle input');
-const navLink = document.querySelector('.nav-link');
 const cartBtn = document.querySelector('.cart-btn');
 const closeCartBtn = document.querySelector('.close-cart');
 const clearCartBtn = document.querySelector('.clear-cart');
@@ -20,32 +15,6 @@ let cart = [];
 // buttons
 let btnsDOM = [];
 
-// getting the products
-class Products {
-  async getProducts() {
-    try {
-      const response = await client.getEntries({
-        content_type: 'kayuProducts',
-      });
-
-      // let result = await fetch('./src/products.json');
-      // let data = await result.json();
-
-      let products = response.items;
-      products = products.map((item) => {
-        const { title, price } = item.fields;
-        const { id } = item.sys;
-        const image = item.fields.image.fields.file.url;
-        return { title, price, id, image };
-      });
-      return products;
-    } catch (error) {
-      console.log(error);
-    }
-  }
-}
-
-// display products
 class UI {
   displayProducts(products) {
     let result = '';
@@ -199,43 +168,4 @@ class UI {
   }
 }
 
-// local storage
-class Storage {
-  static saveProducts(products) {
-    localStorage.setItem('products', JSON.stringify(products));
-  }
-  static getProduct(id) {
-    let products = JSON.parse(localStorage.getItem('products'));
-    return products.find((product) => product.id === id);
-  }
-  static saveCart(cart) {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }
-  static getCart() {
-    return localStorage.getItem('cart')
-      ? JSON.parse(localStorage.getItem('cart'))
-      : [];
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const ui = new UI();
-  const products = new Products();
-  // setup app
-  ui.setupApp();
-  // get all products
-  products
-    .getProducts()
-    .then((products) => {
-      ui.displayProducts(products);
-      Storage.saveProducts(products);
-    })
-    .then(() => {
-      ui.getBagBtns();
-      ui.cartLogic();
-    });
-});
-
-menuToggle.addEventListener('click', function () {
-  navLink.classList.toggle('slide');
-});
+export default UI;

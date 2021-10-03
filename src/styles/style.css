@@ -48,7 +48,7 @@ body {
 
 /* Navbar */
 
-.navbar {
+nav-bar {
   position: sticky;
   top: 0;
   display: flex;
@@ -500,7 +500,7 @@ body {
 
 /* Categories */
 
-#categories {
+categories-sec {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -884,7 +884,7 @@ body {
 
 /* Discover */
 
-#discover {
+discover-sec {
   width: 80%;
   margin: 0 auto;
   background: var(--back-body-2);
@@ -1051,7 +1051,7 @@ body {
 
 /* footer */
 
-.footer {
+footer-bar {
   background: var(--back-head-text-body-1);
   height: 100px;
   font-family: var(--lato-font-family);
@@ -1119,7 +1119,7 @@ body {
 
   /* Categories */
 
-  #categories {
+  categories-sec {
     width: 100%;
     overflow: hidden;
   }
@@ -1183,7 +1183,7 @@ body {
 
   /* Discovery */
 
-  #discover {
+  discover-sec {
     width: 85%;
     padding: 30px;
   }
@@ -1346,7 +1346,7 @@ body {
 
   /* Categories */
 
-  #categories {
+  categories-sec {
     width: 100%;
     overflow: hidden;
   }
@@ -1434,7 +1434,7 @@ body {
 
   /* Discovery */
 
-  #discover {
+  discover-sec {
     width: 90%;
     padding: 10px;
     padding-bottom: 50px;
@@ -1643,7 +1643,7 @@ body {
 
   /* Categories */
 
-  #categories {
+  categories-sec {
     width: 100%;
   }
 
@@ -1750,7 +1750,7 @@ body {
 
   /* Discovery */
 
-  #discover {
+  discover-sec {
     flex-direction: column;
     width: 90%;
     padding: 10px;
