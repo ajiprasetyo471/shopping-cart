@@ -1,3 +1,7 @@
+import 'regenerator-runtime';
+import '@fortawesome/fontawesome-free/css/all.css';
+import 'contentful/dist/contentful.browser.min.js';
+import './styles/style.css';
 import './script/component/nav-bar.js';
 import './script/component/categories-sec.js';
 import './script/component/discover-sec.js';

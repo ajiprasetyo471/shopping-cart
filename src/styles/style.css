@@ -323,7 +323,6 @@ nav-bar {
 .product-1-img {
   margin-top: -60px;
   width: 13vmax;
-  background: url(bed.png);
   filter: drop-shadow(10px 25px 20px rgba(0, 0, 0, 0.2));
 }
 

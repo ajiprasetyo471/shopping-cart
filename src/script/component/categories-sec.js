@@ -79,7 +79,7 @@ template.innerHTML = `
           <textPath xlink:href="#curve">ALIQUAM</textPath>
         </text>
       </svg>
-      <img src="./images/chair1.png" alt="" />
+      <img src="../images/chair1.png" alt="" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
